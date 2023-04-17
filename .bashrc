@@ -137,12 +137,14 @@ alias df='df -h -x none -x tools -x drivers -x lib -x tmpfs'
 alias free='free -h'
 alias mount='mount | column -t'
 alias extip='curl icanhazip.com'
+alias nd='npm run start:dev'
+alias nr='npm run start'
 
 
 # Docker aliases
 alias dstart='sudo service docker start'
 alias dstop='sudo service docker stop'
-
+# alias docker='sudo docker'
 alias drunn='docker ps'
 alias dall='docker ps -a'
 alias drun='docker run -d '
