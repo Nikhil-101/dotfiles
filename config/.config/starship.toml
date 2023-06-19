@@ -1,0 +1,7 @@
+format="$all$time$line_break$character"
+
+[time]
+disabled = false
+use_12hr = true
+format = 'at 🕙[ $time ]($style) '
+style = "bright-white"
