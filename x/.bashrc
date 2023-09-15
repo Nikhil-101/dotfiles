@@ -116,6 +116,14 @@ if ! shopt -oq posix; then
   fi
 fi
 
+# Starship Prompt
+eval "$(starship init bash)"
+
+# Loading nvm for managing NodeJS
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
 
 # USER DEFINED ALIASES ----------------------------------------------------------------------------
 alias update='sudo apt update'
@@ -156,10 +164,3 @@ alias gs="git status"
 alias gc="git commit -m "
 alias ga="git add ."
 alias gp="git push"
-
-# Load Starship Prompt
-eval "$(starship init bash)"
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
