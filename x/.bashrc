@@ -131,6 +131,7 @@ export NVM_DIR="$HOME/.nvm"
 # USER DEFINED ALIASES ----------------------------------------------------------------------------
 alias update='sudo apt update'
 alias upgrade='sudo apt upgrade'
+alias ustarship='curl -sS https://starship.rs/install.sh | sh'
 # alias learn='cd /home/wsl_ubuntu_lts/Learning/'
 # alias "code learn"='code /home/wsl_ubuntu/Learning/CodeWithHarry/DSA'
 alias files='explorer.exe .'
